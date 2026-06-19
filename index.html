@@ -246,7 +246,7 @@ body{
 </head>
 <body>
 <div class="prog" id="prog"></div>
-<a class="floating-order" id="floatOrder" href="https://admirable-entremet-f6cb4a.netlify.app/" target="_blank" rel="noopener"><span class="ic">❀</span>立即點餐</a>
+<a class="floating-order" id="floatOrder" href="#order"><span class="ic">❀</span>立即點餐</a>
 <div class="wrap">
 
   <!-- HERO -->
@@ -408,7 +408,7 @@ addEventListener('scroll',()=>{
 const fab=document.getElementById('floatOrder');
 const orderSec=document.getElementById('order');
 addEventListener('scroll',()=>{
-  const past=scrollY>innerHeight*0.7;
+  const past=scrollY>innerHeight*0.25;
   const orderTop=orderSec.getBoundingClientRect().top;
   const atOrder=orderTop<innerHeight*0.85;
   fab.classList.toggle('show', past && !atOrder);
