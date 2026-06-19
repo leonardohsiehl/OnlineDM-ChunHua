@@ -293,13 +293,6 @@ body{
     <div class="sec-en reveal">À la carte</div>
     <div class="addon-wrap reveal" id="addons"></div>
 
-    <!-- 飯量 -->
-    <div class="sec-head reveal" style="margin-top:42px"><span class="flower">❀</span><span class="sec-title">飯量選擇</span><span class="flower">❀</span></div>
-    <div class="sec-en reveal">Rice Portion</div>
-    <div class="rice reveal">
-      <div class="opt"><div class="t">正常飯</div><div class="s">REGULAR</div></div>
-      <div class="opt"><div class="t">半　飯</div><div class="s">HALF</div></div>
-    </div>
   </section>
 
   <!-- 公司團訂 -->
@@ -316,20 +309,12 @@ body{
     <div class="sec-head reveal"><span class="flower">❀</span><span class="sec-title">店面位置</span><span class="flower">❀</span></div>
     <div class="sec-en reveal">Find Us</div>
     <a class="map-box reveal" href="https://www.google.com/maps/search/?api=1&query=春花伴拌" target="_blank" rel="noopener"
-      style="display:block;text-decoration:none;position:relative;background:#e7e0d0;">
-      <img
-        src="https://maps.googleapis.com/maps/api/staticmap?center=高雄市三民區九如二路240號&zoom=16&size=600x290&scale=2&markers=color:green%7C高雄市三民區九如二路240號&key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY"
-        alt="春花伴拌 地圖"
-        style="width:100%;height:290px;object-fit:cover;display:block;"
-        onerror="this.style.display='none';this.parentElement.querySelector('.map-fallback').style.display='flex';"
-      >
-      <div class="map-fallback" style="display:none;width:100%;height:290px;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--green);">
-        <div style="font-size:36px;">📍</div>
-        <div style="font-family:'Noto Serif TC',serif;font-size:15px;letter-spacing:.1em;">高雄市三民區九如二路 240 號</div>
-        <div style="font-size:12px;color:var(--ink-soft);letter-spacing:.12em;">點此開啟地圖導航</div>
-      </div>
-      <div style="position:absolute;bottom:12px;right:12px;background:var(--green);color:#fff;font-size:12px;letter-spacing:.1em;padding:7px 14px;border-radius:20px;font-family:'Noto Serif TC',serif;">
-        開啟地圖 ↗
+      style="display:flex;text-decoration:none;position:relative;background:#e7e0d0;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:var(--green);">
+      <div style="font-size:48px;">📍</div>
+      <div style="font-family:'Noto Serif TC',serif;font-size:16px;letter-spacing:.12em;color:var(--green);">春花伴拌</div>
+      <div style="font-size:13px;color:var(--ink-soft);letter-spacing:.1em;">高雄市三民區九如二路 240 號</div>
+      <div style="margin-top:4px;background:var(--green);color:#fff;font-size:12px;letter-spacing:.1em;padding:7px 20px;border-radius:20px;font-family:'Noto Serif TC',serif;">
+        開啟 Google 地圖 ↗
       </div>
     </a>
     <p class="map-addr reveal"><a href="https://www.google.com/maps/search/?api=1&query=春花伴拌" target="_blank" rel="noopener">高雄市三民區九如二路 240 號</a></p>
@@ -362,8 +347,8 @@ body{
 <script>
 const signature = [
   {no:'01',nm:'蔬菜飯',note:'三樣配菜＋滷蛋＋豆干',s:80,l:90},
-  {no:'02',nm:'好食菇蔬菜拌飯',note:'非素食',s:100,l:110},
-  {no:'03',nm:'油封嫩雞腿拌飯',note:'無骨',s:115,l:125,feat:true},
+  {no:'02',nm:'好食菇拌飯',note:'非素食',s:100,l:110},
+  {no:'03',nm:'油封嫩雞腿拌飯',note:'無骨',s:115,l:125},
   {no:'04',nm:'蜜汁滷雞腿拌飯',note:'無骨',s:120,l:130},
   {no:'05',nm:'洋蔥豬五花拌飯',s:120,l:130},
   {no:'06',nm:'黑胡椒豬肉拌飯',chili:1,s:125,l:135},
@@ -372,11 +357,11 @@ const signature = [
   {no:'09',nm:'鮮嫩蒸鱸魚拌飯',note:'限量供應',s:175,l:185},
 ];
 const combo = [
-  {no:'10',a:'好食菇蔬菜',b:'油封嫩雞腿',s:115,l:125},
-  {no:'11',a:'好食菇蔬菜',b:'蜜汁滷雞腿',s:120,l:130},
-  {no:'12',a:'好食菇蔬菜',b:'洋蔥豬五花',s:120,l:130},
-  {no:'13',a:'好食菇蔬菜',b:'黑胡椒豬肉',chili:1,s:125,l:135},
-  {no:'14',a:'好食菇蔬菜',b:'塔香牛肉',s:125,l:135},
+  {no:'10',a:'好食菇',b:'油封嫩雞腿',s:115,l:125},
+  {no:'11',a:'好食菇',b:'蜜汁滷雞腿',s:120,l:130},
+  {no:'12',a:'好食菇',b:'洋蔥豬五花',s:120,l:130},
+  {no:'13',a:'好食菇',b:'黑胡椒豬肉',chili:1,s:125,l:135},
+  {no:'14',a:'好食菇',b:'塔香牛肉',s:125,l:135},
   {no:'15',a:'油封嫩雞腿',b:'蜜汁滷雞腿',s:120,l:130},
   {no:'16',a:'油封嫩雞腿',b:'洋蔥豬五花',s:120,l:130},
   {no:'17',a:'油封嫩雞腿',b:'黑胡椒豬肉',chili:1,s:125,l:135},
@@ -391,7 +376,7 @@ const addons = [
   {nm:'回甘普洱茶',p:30},{nm:'油封嫩雞腿',p:70},{nm:'蜜汁滷雞腿',p:75},
   {nm:'洋蔥豬五花',p:70},{nm:'黑胡椒豬肉',p:75,chili:1},{nm:'塔香牛肉',p:75},
   {nm:'韓式泡菜雞',p:90,chili:1},{nm:'鮮嫩蒸鱸魚',p:120},
-  {nm:'蔬菜加量',p:10},{nm:'滷蛋',p:15},{nm:'豆干',p:10},{nm:'白飯',p:10},
+  {nm:'滷蛋',p:15},{nm:'豆干',p:10},{nm:'白飯',p:10},
 ];
 
 const chili = n => n ? `<span class="chili">${'🌶'.repeat(n)}</span>` : '';
