@@ -242,7 +242,7 @@ body{
 </head>
 <body>
 <div class="prog" id="prog"></div>
-<a class="floating-order" id="floatOrder" href="#order"><span class="ic">❀</span>立即點餐</a>
+<a class="floating-order" id="floatOrder" href="https://admirable-entremet-f6cb4a.netlify.app/" target="_blank" rel="noopener"><span class="ic">❀</span>立即點餐</a>
 <div class="wrap">
 
   <!-- HERO -->
@@ -308,6 +308,7 @@ body{
     <div class="grp reveal d1" style="font-family:'Noto Serif TC',serif;font-size:23px;letter-spacing:.18em;text-indent:.18em;color:var(--cream);margin-bottom:10px;">公司團訂</div>
     <p class="reveal d1">團體訂餐・專屬服務<br>會議便當 · 活動餐盒・歡迎來電洽詢</p>
     <a class="btn reveal d2" href="tel:073112285"><span>☎</span><span class="ph">07-311-2285</span></a>
+    <a class="btn reveal d3" href="https://admirable-entremet-f6cb4a.netlify.app/" target="_blank" rel="noopener" style="margin-top:12px;background:var(--gold);"><span>🖥</span>線上團訂入口</a>
   </section>
 
   <!-- 店面位置 -->
@@ -326,10 +327,11 @@ body{
     <div class="order-card reveal">
       <div class="tag reveal d1">ORDER NOW</div>
       <h2 class="reveal d1">立即點餐</h2>
-      <p class="desc reveal d2">掃描店內 QR Code，或透過電話、LINE 直接下單。<br>線上點餐系統正式上線中。</p>
+      <p class="desc reveal d2">透過電話、LINE，或線上點餐入口直接下單。</p>
       <div class="order-actions reveal d3">
-        <a class="obtn green" href="tel:073112285"><span>☎</span>電話訂餐</a>
-        <a class="obtn line" href="#"><span>✉</span>LINE 點餐</a>
+        <a class="obtn green" href="https://admirable-entremet-f6cb4a.netlify.app/" target="_blank" rel="noopener"><span>🖥</span>線上點餐</a>
+        <a class="obtn line" href="https://line.me/R/ti/p/@645wwzzx" target="_blank" rel="noopener"><span>✉</span>LINE 點餐</a>
+        <a class="obtn" style="background:var(--ink);color:#fff;box-shadow:0 10px 24px rgba(0,0,0,.2);" href="tel:073112285"><span>☎</span>電話訂餐</a>
       </div>
     </div>
   </section>
@@ -347,13 +349,13 @@ body{
 <script>
 const signature = [
   {no:'01',nm:'蔬菜飯',note:'三樣配菜＋滷蛋＋豆干',s:80,l:90},
-  {no:'02',nm:'好食菇蔬菜拌飯',note:'奶蛋素',s:100,l:110},
+  {no:'02',nm:'好食菇蔬菜拌飯',note:'非素食',s:100,l:110},
   {no:'03',nm:'油封嫩雞腿拌飯',note:'無骨',s:115,l:125,feat:true},
   {no:'04',nm:'蜜汁滷雞腿拌飯',note:'無骨',s:120,l:130},
   {no:'05',nm:'洋蔥豬五花拌飯',s:120,l:130},
   {no:'06',nm:'黑胡椒豬肉拌飯',chili:1,s:125,l:135},
   {no:'07',nm:'塔香牛肉拌飯',s:125,l:135},
-  {no:'08',nm:'韓式泡菜雞肉拌飯',note:'微辣／辣度',chili:2,s:140,l:150},
+  {no:'08',nm:'韓式泡菜雞拌飯',chili:2,s:140,l:150},
   {no:'09',nm:'鮮嫩蒸鱸魚拌飯',note:'限量供應',s:175,l:185},
 ];
 const combo = [
@@ -361,7 +363,7 @@ const combo = [
   {no:'11',a:'好食菇蔬菜',b:'蜜汁滷雞腿',s:120,l:130},
   {no:'12',a:'好食菇蔬菜',b:'洋蔥豬五花',s:120,l:130},
   {no:'13',a:'好食菇蔬菜',b:'黑胡椒豬肉',chili:1,s:125,l:135},
-  {no:'14',a:'好食菇蔬菜',b:'塔香牛肉',s:120,l:130},
+  {no:'14',a:'好食菇蔬菜',b:'塔香牛肉',s:125,l:135},
   {no:'15',a:'油封嫩雞腿',b:'蜜汁滷雞腿',s:120,l:130},
   {no:'16',a:'油封嫩雞腿',b:'洋蔥豬五花',s:120,l:130},
   {no:'17',a:'油封嫩雞腿',b:'黑胡椒豬肉',chili:1,s:125,l:135},
@@ -373,9 +375,10 @@ const combo = [
   {no:'23',a:'黑胡椒豬肉',b:'塔香牛肉',chili:1,s:125,l:135},
 ];
 const addons = [
-  {nm:'油封雞腿排',p:70},{nm:'蜜汁雞腿排',p:75},{nm:'洋蔥豬五花',p:70},
-  {nm:'黑胡椒豬肉',p:70,chili:1},{nm:'韓式泡菜',p:60,chili:1},
-  {nm:'滷蛋',p:15},{nm:'豆干',p:10},{nm:'蔬菜加量',p:10},{nm:'白飯加量',p:10},
+  {nm:'回甘普洱茶',p:30},{nm:'油封嫩雞腿',p:70},{nm:'蜜汁滷雞腿',p:75},
+  {nm:'洋蔥豬五花',p:70},{nm:'黑胡椒豬肉',p:75,chili:1},{nm:'塔香牛肉',p:75},
+  {nm:'韓式泡菜雞',p:90,chili:1},{nm:'鮮嫩蒸鱸魚',p:120},
+  {nm:'蔬菜加量',p:10},{nm:'滷蛋',p:15},{nm:'豆干',p:10},{nm:'白飯',p:10},
 ];
 
 const chili = n => n ? `<span class="chili">${'🌶'.repeat(n)}</span>` : '';
